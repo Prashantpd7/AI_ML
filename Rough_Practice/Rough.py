@@ -30,3 +30,5 @@ c1.sound()
     
 # r = Rectangle()
 # print(r.area())
+
+print('"hello world"')
