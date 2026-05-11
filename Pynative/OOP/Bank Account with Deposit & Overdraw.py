@@ -10,3 +10,21 @@
 # Balance after withdrawal: 1300
 # Insufficient funds. Current balance: 1300
 
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.amount = amount
+        self.balance += self.amount
+        print(f"Your current balance is: {self.balance}")
+    
+    def withdraw(self, amount):
+        self.amount = amount
+        if (self.balance - self.amount) >= 0:
+            print(f"Your current balance is: {self.balance - self.amount}")
+        else:
+            print("Insufficient balance")
+
+b1 = BankAccount(100000)
+b1.withdraw(120000)
