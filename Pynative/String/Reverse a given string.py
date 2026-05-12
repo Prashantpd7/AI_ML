@@ -5,3 +5,7 @@
 # Given Input: str1 = "PYnative"
 
 # Expected Output: evitanYP
+
+a = input("Enter string: ")
+b = a[::-1]
+print(b)
